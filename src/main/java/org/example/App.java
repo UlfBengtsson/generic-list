@@ -2,14 +2,25 @@ package org.example;
 
 import java.util.*;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
+        //  Key , Value
+        Map<String, Integer> luckyNumbers = new HashMap<>();
+
+        luckyNumbers.put("Anka", 8);
+        luckyNumbers.put("Anka", 999);
+        luckyNumbers.put("Dag", 25);
+        luckyNumbers.put("Lotto", 17);
+
+        System.out.println(luckyNumbers);
+        System.out.println(luckyNumbers.keySet());
+        System.out.println(luckyNumbers.containsKey("Anka"));
+        System.out.println(luckyNumbers.containsValue("999"));
+        System.out.println(luckyNumbers.getOrDefault("Anka", 666));
+
+        /*
         List<Boolean> results = new ArrayList<>();
         Set<String> names = new HashSet<>();
 
@@ -27,6 +38,8 @@ public class App
         {
             System.out.println(item);
         }
+        */
+
         /*
         MyList<Integer> numbers = new MyList<Integer>();
 
